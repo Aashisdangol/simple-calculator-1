@@ -1,5 +1,5 @@
 let Num1 = parseFloat(prompt("Enter a Number"))
-let operator = (prompt("Enter a operator (+,-,*,/,**)"))
+let operator = (prompt("Enter a operator (+,-,*,/,**,%)"))
 let Num2 = parseFloat(prompt("Enter a Number"))
 
 
@@ -19,6 +19,9 @@ switch (operator) {
        break;
    case '**':
        result = Num1 ** Num2;
+       break;
+   case '%':
+       result = Num1 % Num2;
        break;
    default:
        result = 'Invalid operator';
